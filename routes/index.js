@@ -20,10 +20,8 @@ router.get('/', function(req, res, next) {
   });
   
   con.connect(function(err) {
-    console.log("11111");
     if (err) throw err;
     con.query("SELECT * FROM command", function (err, result, fields) {
-      console.log("22222");
       if (err) throw err;
       console.log(result);
     });
