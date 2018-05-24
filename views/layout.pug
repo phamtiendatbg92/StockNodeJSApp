@@ -2,11 +2,18 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/cschart.css')
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
-    script(src="/lib/d3.js")
-    script(src="/javascripts/DrawChart.js")
     
     
   body
     block content
+
+    script(src="//d3js.org/d3.v3.min.js" charset="utf-8")
+    script(src="//d3js.org/d3-queue.v3.min.js")
+    script(src="//d3js.org/topojson.v1.min.js")
+    script(src="/javascripts/cschart.js")
+    script(src="/javascripts/csbars.js")
+    script(src="/javascripts/csheader.js")
+    script(src="/javascripts/csdataprep.js")
+    script(src="/javascripts/csmain.js")

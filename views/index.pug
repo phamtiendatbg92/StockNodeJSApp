@@ -2,4 +2,20 @@ extends layout
 
 
 block content
-  h1= title
+  div(id="demobox")
+        div(id="csbox")
+            //div(id="option")
+                input(id="oneM" name="1M" type="button" value="1M")
+                input(id="threeM" name="3M" type="button" value="3M")
+                input(id="sixM" name="6M" type="button" value="6M")
+                input(id="oneY" name="1Y" type="button" value="1Y")
+                input(id="twoY" name="2Y" type="button" value="2Y")
+                input(id="fourY" name="4Y" type="button" value="4Y")
+                
+            div(id="infobar")
+              div(id="infodate" class="infohead")
+              div(id="infoopen" class="infobox")
+              div(id="infohigh" class="infobox")
+              div(id="infolow" class="infobox")
+              div(id="infoclose" class="infobox")
+            div(id="chart1")
